@@ -1,0 +1,17 @@
+﻿@model  APIProject.Models.CityModel
+
+
+@if (ViewBag.Tile != "Error")
+{
+<h2>City Data</h2>
+<h4>Country Code: @Model.Country</h4>
+<h4>Weather: @Model.Description</h4>
+<h4>Latitude: @Model.Lat</h4>
+<h4>Longitude: @Model.Lng</h4>
+<h4>Humidty: @Model.Humidity</h4>
+}
+else {
+<h2>Some error has occurs, please try again with valid city name.</h2>
+}
+
+
